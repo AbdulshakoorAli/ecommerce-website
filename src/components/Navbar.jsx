@@ -2,12 +2,12 @@ import React from "react";
 const Navbar = () => {
   return (
     <div className="container">
-      <nav class="navbar navbar-expand-lg navbar-light bg-white  p-2 shadow-sm">
-        <a class="navbar-brand fw-bold fs-4 mx-2" href="#">
+      <nav className="navbar navbar-expand-lg navbar-light bg-white  p-2 shadow-sm">
+        <a className="navbar-brand fw-bold fs-4 mx-2" href="#">
           PRELOVED OFFICIALS
         </a>
         <button
-          class="navbar-toggler"
+          className="navbar-toggler"
           type="button"
           data-toggle="collapse"
           data-target="#navbarTogglerDemo02"
@@ -15,29 +15,29 @@ const Navbar = () => {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span className="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-          <ul class="navbar-nav mx-auto mt-2 mt-lg-0 px-2">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">
-                Home <span class="sr-only">(current)</span>
+        <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul className="navbar-nav mx-auto mt-2 mt-lg-0 px-2">
+            <li className="nav-item active">
+              <a className="nav-link" href="#">
+                Home <span className="sr-only">(current)</span>
               </a>
             </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="#">
-                About <span class="sr-only">(current)</span>
+            <li className="nav-item active">
+              <a className="nav-link" href="#">
+                About <span className="sr-only">(current)</span>
               </a>
             </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="#">
-                Product <span class="sr-only">(current)</span>
+            <li className="nav-item active">
+              <a className="nav-link" href="#">
+                Product <span className="sr-only">(current)</span>
               </a>
             </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="#">
-                Contact <span class="sr-only">(current)</span>
+            <li className="nav-item active">
+              <a className="nav-link" href="#">
+                Contact <span className="sr-only">(current)</span>
               </a>
             </li>
           </ul>
@@ -62,4 +62,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default Navbar
