@@ -24,6 +24,11 @@ const Products = () => {
     getProducts();
   }, []);
 
+  const filterProduct = (categrey) => {
+    // const Updated_data = setFilter((x) => x.category == categrey);
+    // setData(Updated_data);
+  };
+
   const Loading = () => {
     return <>Loading....</>;
   };
@@ -31,13 +36,13 @@ const Products = () => {
     return (
       <>
         <div className="button d-flex justify-content-center mb-5 pb-5">
-          <button className="btn btn-outline-dark me-2">All</button>
-          <button className="btn btn-outline-dark me-2">Men's clothing</button>
-          <button className="btn btn-outline-dark me-2">
+          <button className="btn btn-outline-dark me-2" onClick={setFilter(data)}>All</button>
+          <button className="btn btn-outline-dark me-2" onClick={ filterProduct("Men's clothing")}>Men's clothing</button>
+          <button className="btn btn-outline-dark me-2" onClick={ filterProduct("Women's clothing")}>
             Women's clothing
           </button>
-          <button className="btn btn-outline-dark me-2">Jewellary</button>
-          <button className="btn btn-outline-dark me-2">Electronics</button>
+          <button className="btn btn-outline-dark me-2" onClick={ filterProduct("Jewellary")}>Jewellary</button>
+          <button className="btn btn-outline-dark me-2" onClick={ filterProduct("Electronics")}>>Electronics</button>
         </div>
         {filter.map((product) => {
           return (
