@@ -4,9 +4,9 @@ const Navbar = () => {
   return (
     <div className="container">
       <nav className="navbar navbar-expand-lg navbar-light bg-white  p-2 shadow-sm">
-        <a className="navbar-brand fw-bold fs-4 mx-2" href="#">
+        <NavLink to="/" className="navbar-brand fw-bold fs-4 mx-2" href="#">
           PRELOVED OFFICIALS
-        </a>
+        </NavLink>
         <button
           className="navbar-toggler"
           type="button"
@@ -22,48 +22,47 @@ const Navbar = () => {
         <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
           <ul className="navbar-nav mx-auto mt-2 mt-lg-0 px-2">
             <li className="nav-item active">
-              <a className="nav-link">
+              <NavLink className="nav-link" to="/">
                 Home <span className="sr-only">(current)</span>
-              </a>
+              </NavLink>
             </li>
             <li className="nav-item active">
-              <a className="nav-link">
+              <NavLink className="nav-link" to="/about">
                 About <span className="sr-only">(current)</span>
-              </a>
+              </NavLink>
             </li>
             <li className="nav-item active">
-              <a className="nav-link">
+              <NavLink className="nav-link" to="/products">
                 Product <span className="sr-only">(current)</span>
-              </a>
+              </NavLink>
             </li>
             <li className="nav-item active">
-              <a className="nav-link" >
+              <NavLink className="nav-link" to="/contact">
                 Contact <span className="sr-only">(current)</span>
-              </a>
+              </NavLink>
             </li>
           </ul>
         </div>
         <div className="buttons">
-          <a
-            
+          <NavLink
+            to="/signin"
             className="btn btn-outline-dark my-2 my-sm-0 me-2"
           >
             <i className="fa fa-sign-in me-1"></i> Sign In
-          </a>
+          </NavLink>
         </div>
         <div className="buttons">
-          <a
+          <NavLink
+            to="/register"
             className="btn btn-outline-dark my-2 my-sm-0 me-2"
           >
             <i className="fa fa-user-plus me-1"></i> Register
-          </a>
+          </NavLink>
         </div>
         <div className="buttons">
-          <a
-            className="btn btn-outline-dark my-2 my-sm-0 me-2"
-          >
+          <NavLink to="cart" className="btn btn-outline-dark my-2 my-sm-0 me-2">
             <i className="fa fa-shopping-cart me-1"></i> Cart(0)
-          </a>
+          </NavLink>
         </div>
       </nav>
     </div>
