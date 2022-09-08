@@ -87,11 +87,11 @@ const Products = () => {
                       $ {product.price}
                     </p>
                     <NavLink
-                      to={`products/${product.id}`}
+                       to={`products/${product.id}`}
                       className="btn btn-dark"
                     >
                       BUY NOW
-                    </NavLink>
+                    </NavLink> 
                   </div>
                 </div>
               </div>
